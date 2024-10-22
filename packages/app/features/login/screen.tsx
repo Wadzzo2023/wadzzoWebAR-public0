@@ -9,22 +9,13 @@ import {
   View,
 } from "react-native";
 
-// import { Color } from "@app/utils/constants/Colors";
+import { Color } from "@app/utils/colors";
 // import { BASE_URL, CALLBACK_URL } from "@app/utils/constants/Common";
 import { useMutation } from "@tanstack/react-query";
 // import { useRouter } from "expo-router";
 import { ActivityIndicator, Button } from "react-native-paper";
 
 const webPlatform = Platform.OS === "web";
-
-export const Color = {
-  primary: "#FF0000",
-  secondary: "#00FF00",
-  tertiary: "#0000FF",
-  wadzzo: "#38C02B",
-  white: "#FFFFFF",
-  offWhite: "#F4F6FF",
-};
 
 export const BASE_URL = "https://app.wadzzo.com/";
 export const CALLBACK_URL = "http://192.168.0.101:3000/";
