@@ -6,3 +6,4 @@ node_modules
 
 apps/expo-test
 packages/api
+.vercel
