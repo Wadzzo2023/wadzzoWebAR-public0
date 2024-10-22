@@ -9,18 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.15"
+    "@expo/next-adapter": "^6.0.0",
+    "next": "14.2.15",
+    "next-fonts": "^1.5.1",
+    "next-images": "^1.8.5",
+    "react": "18.2.0",
+    "react-art": "^18.3.1",
+    "react-dom": "18.2.0",
+    "react-native-web": "^0.19.6",
+    "ui": "*"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "~18.2.45",
+    "@types/react-dom": "18.2.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.15",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.15"
+    "typescript": "^5"
   }
 }
