@@ -4,6 +4,9 @@
   "description": "monorepo for wadzzo ar",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "web": "cd apps/web && yarn dev"
+  },
   "workspaces": [
     "apps/*",
     "packages/*"
