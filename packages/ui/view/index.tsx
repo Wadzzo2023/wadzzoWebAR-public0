@@ -5,13 +5,13 @@ export const View = () => {
   return (
     <React.Fragment>
       {/* {Platform.OS === "web" ? (
-          <style type="text/css">{`
+        <style type="text/css">{`
         @font-face {
           font-family: MaterialCommunityIcons;
           src: url(${require("react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf")}) format('truetype');
         }
       `}</style>
-        ) : null} */}
+      ) : null} */}
       <Button
         // icon="camera"
         mode="contained"

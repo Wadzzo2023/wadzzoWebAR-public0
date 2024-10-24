@@ -7,6 +7,11 @@ declare global {
     interface IntrinsicElements {
       "a-scene": any;
       "a-box": any;
+      "a-marker-camera": any;
+      "a-entity": any;
+      "a-sphere": any;
+      "a-text": any;
+      "a-cursor": any;
     }
   }
 }
@@ -36,6 +41,29 @@ export default function ARPage() {
         <a-scene embedded arjs="sourceType: webcam;">
           <a-box position="0 0.5 0" material="opacity: 0.5;"></a-box>
           {/* <a-marker-camera preset="hiro"></a-marker-camera> */}
+          <a-entity camera look-controls pointerLockEnabled>
+            <a-cursor></a-cursor>
+            <a-sphere
+              clickhandler="txt:box1"
+              id="apiSphere"
+              position="0 0 -10"
+              radius="1.25"
+              color="#EF2D5E"
+              animation="property: position; to: 0 3 -5; dur: 2000; easing: easeInOutQuad; loop: true"
+            ></a-sphere>
+            <a-text
+              value="Hello AR.js!"
+              position="0 0 -5"
+              scale="2 2 2"
+              color="#FFFFFF"
+            ></a-text>
+
+            <a-box
+              clickhandler="txt:box1"
+              position="0 2 -5"
+              scale="2 2 2"
+            ></a-box>
+          </a-entity>
         </a-scene>
         <h1 className="absolute top-0 right-0">vong cong</h1>
       </div>
